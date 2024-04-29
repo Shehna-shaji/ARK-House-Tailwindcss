@@ -39,7 +39,7 @@ const RecentProjects = () => {
                   // width: "100%",
                   // height: "300px",
                 }}
-                className="w-[300px] h-[275px] sm:w-[500px] sm:h-[455px] lg:w-[430px] lg:h-[445px] xl:w-[550px] xl:h-[480px]"
+                className="w-[300px] h-[275px] sm:w-[500px] sm:h-[455px] lg:w-[400px] lg:h-[445px] xl:w-[550px] xl:h-[480px]"
               >
                 <div className="relative flex gap-5 ">
                   <img src={imagelogo} style={styles} />
@@ -225,7 +225,7 @@ const RecentProjects = () => {
           <div>
             <img
               src={Projectnumber}
-              className="w-[140px] h-[101px]  lg:w-[380px] lg:h-[251px] xl:w-[480px] xl:h-[331px]"
+              className="w-[140px] h-[101px]  lg:w-[240px] lg:h-[251px] xl:w-[480px] xl:h-[331px]"
             />
           </div>
           <div>
@@ -244,7 +244,7 @@ const RecentProjects = () => {
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                 }}
-                className="w-[314px] h-[342px] sm:w-[564px] sm:h-[472px]"
+                className="w-[314px] h-[342px] sm:w-[564px] sm:h-[472px] lg:w-[314px] lg:h-[372px] xl:w-[564px] xl:h-[472px] "
               >
 
               </div>

@@ -22,7 +22,9 @@ const Menu = () => {
       <HashLink to='#projects'>
       <Menu number={3} text="Projects" />
       </HashLink>
+      <HashLink to='#teams'>
       <Menu number={4} text="Team" />
+      </HashLink>
       <Menu number={5} text="Blog" />
     </div>
   );
