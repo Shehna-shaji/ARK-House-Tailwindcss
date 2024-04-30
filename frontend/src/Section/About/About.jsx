@@ -3,6 +3,7 @@ import image from "../../assets/Image.png";
 import image2 from "../../assets/Image2.png";
 import image3 from "../../assets/Image3.png";
 import Button from "../../Components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
   const data = [
@@ -16,6 +17,7 @@ const About = () => {
       photo: image3,
     },
   ];
+  const navigate=useNavigate()
   const Images = ({ photo }) => {
     return (
       <div className="flex justify-center items-center w-[300px] h-auto object-fill relative max-h-screen  bg-[#f8f8f8] xl:flex-1">
@@ -51,7 +53,7 @@ const About = () => {
           human truths.
         </p>
         <div>
-            <Button text='Our History'/>
+            <Button text='Our History' onclick={()=>navigate('/ourhistory')}/>
         </div>
 
       </div>

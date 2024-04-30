@@ -6,6 +6,7 @@ import interior from "../../assets/Image2.png";
 import design from "../../assets/Image3.png";
 import Heading from "../../Components/Heading/Heading";
 import Button from "../../Components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 const Service = () => {
   const [image, setImage] = useState(architecture);
@@ -47,7 +48,7 @@ const Service = () => {
       </ul>
     );
   };
-
+const navigate=useNavigate()
  
 
   return (
@@ -123,7 +124,7 @@ const Service = () => {
                 to feel. To love. To image. To wonder. To guide. To jest. To
                 <br /> rule. To serve. To belong.
               </p>
-              <Button text='Contact Us'/>
+              <Button text='Contact Us'onclick={()=>navigate('/contact')}/>
             </div>
           </div>
         </div>
