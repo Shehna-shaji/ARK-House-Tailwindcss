@@ -20,7 +20,7 @@ const Breadcrumbs = () => {
                         const title= convertSlugToTitle( value)
 
                         return(
-                            <li key={to} className='flex gap-1'>
+                            <li key={to} className='flex gap-1 '>
                                 <span className='flex items-center'><FiArrowRight/></span>
                                 {
                                     last?(

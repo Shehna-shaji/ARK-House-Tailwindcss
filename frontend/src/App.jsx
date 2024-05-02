@@ -13,7 +13,7 @@ import CentralSaintGiles from "./Pages/CentralSaintGiles/CentralSaintGiles";
 
 const App = () => {
   return (
-    <div className="2xl:m-auto 2xl:max-w-[1900px]">
+    <div className="2xl:m-auto 2xl:max-w-[1900px] w-full">
       <BrowserRouter>
         <MaxWrapper>
           <ScrollToTop />
