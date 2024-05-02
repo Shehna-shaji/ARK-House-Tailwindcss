@@ -19,6 +19,7 @@ const Projects = () => {
           experience of contemporary conditions set within a given frame.
         </p>
       </div>
+      <hr className="w-full border-0 h-0.5 bg-black size-full" />
       <ProjectDetail />
     </div>
   );
