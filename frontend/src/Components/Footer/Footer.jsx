@@ -19,16 +19,20 @@ const Footer = () => {
     );
   };
 
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   return (
     <div className="pt-6">
-      <Heading title="Start a Project?" text="Contact Us" onclick={()=>navigate('/contact')}/>
+      <Heading
+        title="Start a Project?"
+        text="Contact Us"
+        onclick={() => navigate("/contact")}
+      />
       <div className="grid justify-between grid-cols-1 lg:grid-cols-2">
         <div className="flex  flex-col justify-center gap-4 mt-5 md:mt-5 md:flex-row md:justify-between lg:flex-col lg:mt-14 ">
           <h3 className="font-semibold text-xs text-black md:text-2xl lg:text-4xl ">
             Support is available <br /> 24 hours
           </h3>
-          <Button text="Contact Us" onclick={()=>navigate('/contact')}/>
+          <Button text="Contact Us" onclick={() => navigate("/contact")} />
         </div>
         <div className="grid grid-cols-2 gap-6 mt-12 md:grid-cols-3">
           {details.map((data) => {
@@ -69,28 +73,26 @@ const Footer = () => {
           <FooterMenu number={4} text="Team" />
           <FooterMenu number={5} text="Blog" />
         </div>
-        <SocialMedia/>
+        <SocialMedia />
       </div>
-      <hr className="w-full border-0 h-0.5 bg-black size-full"/>
+      <hr className="w-full border-0 h-0.5 bg-black size-full" />
       <div className="flex justify-between mt-8 mb-20">
         <div className="flex items-center gap-2">
-            <div className="text-xl font-normal">
+          <div className="text-xl font-normal">
             <p> ©</p>
-
-            </div>
-            <div >
-            <h6 className="font-normal text-xs text-black ">Copywriting | All Rights Reserved</h6>
-
-            </div>
-
+          </div>
+          <div>
+            <h6 className="font-normal text-xs text-black ">
+              Copywriting | All Rights Reserved
+            </h6>
+          </div>
         </div>
         <div className="flex gap-2">
-      <h6 className="font-normal text-xs text-black ">Terms of Use | Privacy</h6>
-
+          <h6 className="font-normal text-xs text-black ">
+            Terms of Use | Privacy
+          </h6>
+        </div>
       </div>
-
-      </div>
-      
     </div>
   );
 };

@@ -273,7 +273,7 @@ const RecentProjects = () => {
       <div className="flex flex-col items-center gap-6">
         <div className="font-semibold text-3xl ">Start a Project?</div>
         <div>
-          <Button text="Contact Us" onclick={()=>navigate('/contact')}/>
+          <Button text="Contact Us" onclick={() => navigate("/contact")} />
         </div>
       </div>
     </div>
