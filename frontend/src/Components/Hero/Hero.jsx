@@ -2,8 +2,10 @@ import React from 'react'
 import Button from '../Button/Button'
 import SocialMedia from '../SocialMedia/SocialMedia'
 import heroimage from '../../assets/HeroImage.png'
+import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+  const navigate=useNavigate()
   return (
     <div className='flex  flex-1 justify-between flex-col '>
         <div className='flex justify-between mt-10 sm:mt-14'>
@@ -18,7 +20,7 @@ const Hero = () => {
             </div>
             <div className='flex flex-col justify-evenly items-end'>
                 <div>
-                    <Button text='Contact Us'/>
+                    <Button text='Contact Us' onclick={()=>navigate('/contact')}/>
                 </div>
                 <div>
                     <SocialMedia/>
@@ -27,8 +29,8 @@ const Hero = () => {
             </div>
 
         </div>
-        <div className='bg-slate-50  bg-cover w-full max-w-full h-screen  flex-1 flex items-center justify-center relative bottom-1 sm:bottom-0 md:bottom-8 lg:bottom-16 xl:bottom-24'>
-            <img src={heroimage} className='relative -top-5 bg-cover w-auto h-auto    md:-top-7 lg:-top-9 xl:-top-10' />
+        <div className='bg-slate-50  bg-cover w-full max-w-full h-screen  flex-1  flex items-center justify-center relative bottom-1 sm:bottom-0 md:bottom-8 lg:bottom-16 xl:bottom-24'>
+            <img src={heroimage} className='relative -top-5 bg-cover w-auto h-full    md:-top-7 lg:-top-9 xl:-top-10' />
 
         </div>
         <hr className="w-full border-0 h-0.5 bg-black size-full"/>

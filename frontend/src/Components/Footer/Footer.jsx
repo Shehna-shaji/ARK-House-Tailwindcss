@@ -4,6 +4,7 @@ import Heading from "../Heading/Heading";
 import Button from "../Button/Button";
 import details from "../../assets/address";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const FooterMenu = ({ number, text }) => {
@@ -17,15 +18,17 @@ const Footer = () => {
       </div>
     );
   };
+
+  const navigate=useNavigate()
   return (
     <div className="pt-6">
-      <Heading title="Start a Project?" text="Contact Us" />
+      <Heading title="Start a Project?" text="Contact Us" onclick={()=>navigate('/contact')}/>
       <div className="grid justify-between grid-cols-1 lg:grid-cols-2">
         <div className="flex  flex-col justify-center gap-4 mt-5 md:mt-5 md:flex-row md:justify-between lg:flex-col lg:mt-14 ">
           <h3 className="font-semibold text-xs text-black md:text-2xl lg:text-4xl ">
             Support is available <br /> 24 hours
           </h3>
-          <Button text="Contact Us" />
+          <Button text="Contact Us" onclick={()=>navigate('/contact')}/>
         </div>
         <div className="grid grid-cols-2 gap-6 mt-12 md:grid-cols-3">
           {details.map((data) => {

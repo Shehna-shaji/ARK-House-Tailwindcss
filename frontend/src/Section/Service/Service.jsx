@@ -53,7 +53,7 @@ const navigate=useNavigate()
 
   return (
     <div className="flex flex-col lg:m-auto" id="services">
-      <Heading title="Services" text="Contact Us" />
+      <Heading title="Services" text="Contact Us" onclick={()=>navigate('/contact')}/>
       <div className="flex flex-col pt-14 gap-12 md:flex-row lg:gap-16 lg:m-auto">
         <div className="flex flex-col gap-6 md:flex-row md:gap-12 lg:gap-16 xl:mt-14">
           <div className="flex flex-col items-center gap-4 ">
@@ -73,7 +73,7 @@ const navigate=useNavigate()
                   key={i}
                   text={img.text}
                   onclick={() => handleChange(img.img1)}
-                  className={isFocused===img.img1?'underline underline-offset-[10px] cursor-pointer text-sm md:text-xl font-medium text-black':' text-sm md:text-xl cursor-pointer font-medium '}
+                  className={isFocused===img.img1?'underline underline-offset-[10px] cursor-pointer text-sm sm:text-lg md:text-xl font-medium text-black':' text-sm sm:text-lg md:text-xl cursor-pointer font-medium '}
                   
                 />
               );
@@ -85,7 +85,7 @@ const navigate=useNavigate()
                   key={i}
                   text={img.text}
                   onclick={() => handleChange(img.img2)}
-                  className={isFocused===img.img2?'underline underline-offset-[10px] cursor-pointer text-sm md:text-xl font-medium text-black':' text-sm md:text-xl cursor-pointer font-medium'}
+                  className={isFocused===img.img2?'underline underline-offset-[10px] cursor-pointer text-sm sm:text-lg md:text-xl font-medium text-black':' text-sm sm:text-lg md:text-xl cursor-pointer font-medium'}
                 />
               );
             })}
@@ -96,7 +96,7 @@ const navigate=useNavigate()
                   key={i}
                   text={img.text}
                   onclick={() => handleChange(img.img3)}
-                  className={isFocused===img.img3?'underline underline-offset-[10px] cursor-pointer text-sm md:text-xl font-medium text-black':' text-sm md:text-xl cursor-pointer font-medium'}
+                  className={isFocused===img.img3?'underline underline-offset-[10px] cursor-pointer text-sm sm:text-lg md:text-xl font-medium text-black':' text-sm sm:text-lg md:text-xl cursor-pointer font-medium'}
                 />
               );
             })}
@@ -107,7 +107,7 @@ const navigate=useNavigate()
                   key={i}
                   text={img.text}
                   onclick={() => handleChange(img.img4)}
-                  className={isFocused===img.img4?'underline underline-offset-[10px] cursor-pointer text-sm md:text-xl font-medium text-black':' text-sm md:text-xl cursor-pointer font-medium'}
+                  className={isFocused===img.img4?'underline underline-offset-[10px] cursor-pointer text-sm sm:text-lg md:text-xl font-medium text-black':' text-sm sm:text-lg md:text-xl cursor-pointer font-medium'}
                 />
               );
             })}

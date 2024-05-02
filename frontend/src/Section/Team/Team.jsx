@@ -36,7 +36,7 @@ const Team = () => {
             </div>
             <div className='flex flex-col gap-14 xl:flex-row '>
                 <div className='flex flex-col justify-between '>
-                    <ul className='flex gap-6 sm:gap-10 md:gap-20 xl:flex-col sm:mx-auto lg:mx-0 lg:gap-20 py-0 xl:py-36'>
+                    <ul className='flex gap-4 sm:gap-10 md:gap-20 xl:flex-col sm:mx-auto lg:mx-0 lg:gap-20 py-0 xl:py-36'>
                         <li className='font-bold text-xs sm:text-lg underline underline-offset-[10px] md:text-base lg:text-lg'>
                             Management
 

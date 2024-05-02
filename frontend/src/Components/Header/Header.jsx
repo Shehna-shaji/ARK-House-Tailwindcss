@@ -41,6 +41,7 @@ const Header = () => {
               ? " flex justify-center z-20 w-full    bg-white absolute left-0 top-24  pt-10   h-full ease-in-out duration-500"
               : "absolute left-[-100%] "
           }
+          onClick={()=>setClick(!click)}
           ref={menuref}
         >
           <Menu />

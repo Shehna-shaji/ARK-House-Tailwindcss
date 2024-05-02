@@ -21,7 +21,7 @@ const Blog = () => {
     );
   };
   return (
-    <div className="flex flex-col gap-14 pt-14">
+    <div className="flex flex-col gap-14 pt-14" id="blog">
       <Heading title="Blog" text="Show More" />
       <div className="flex gap-2">
         <div className="flex flex-col mx-auto gap-[60px] lg:flex-row lg:mx-auto lg:ml-[100px] xl:gap-10 2xl:mx-auto">

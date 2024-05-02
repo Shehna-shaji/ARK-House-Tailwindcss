@@ -123,7 +123,7 @@ const RecentProjects = () => {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                   }}
-                  className="w-[305px] h-[371px] sm:w-[545px] sm:h-[571px] lg:w-[325px] lg:h-[371px]"
+                  className="w-[280px] h-[351px] sm:w-[545px] sm:h-[571px] lg:w-[325px] lg:h-[371px]"
                 >
                   <div className="relative flex gap-5 ">
                     <img src={imagelogo} style={styles} />
@@ -143,7 +143,7 @@ const RecentProjects = () => {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                   }}
-                  className="w-[310px] h-[307px] sm:w-[553px] sm:h-[607px] lg:w-[480px] lg:h-[507px] xl:w-[783px] xl:h-[607px]"
+                  className="w-[280px] h-[298px] sm:w-[553px] sm:h-[607px] lg:w-[480px] lg:h-[507px] xl:w-[783px] xl:h-[607px]"
                 >
                   <div className="relative flex gap-5 ">
                     <img src={imagelogo} style={styles} />
@@ -207,7 +207,7 @@ const RecentProjects = () => {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                   }}
-                  className="w-[320px] h-[220px] sm:w-[583px] sm:h-[407px] lg:w-[503px] lg:h-[357px] xl:w-[783px] xl:h-[607px]"
+                  className="w-[300px] h-[220px] sm:w-[583px] sm:h-[407px] lg:w-[503px] lg:h-[357px] xl:w-[783px] xl:h-[607px]"
                 >
                   <div className="relative flex gap-5 ">
                     <img src={imagelogo} style={styles} />
@@ -228,7 +228,7 @@ const RecentProjects = () => {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                   }}
-                  className="w-[300px] h-[371px] sm:w-[320px] sm:h-[371px]"
+                  className="w-[280px] h-[351px] sm:w-[560px] sm:h-[540px] lg:w-[320px] lg:h-[371px]"
                 >
                   <div className="relative flex gap-5 ">
                     <img src={imagelogo} style={styles} />
@@ -263,7 +263,7 @@ const RecentProjects = () => {
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                   }}
-                  className="w-[314px] h-[342px] sm:w-[564px] sm:h-[472px] lg:w-[314px] lg:h-[372px] xl:w-[564px] xl:h-[472px] "
+                  className="w-[280px] h-[322px] sm:w-[564px] sm:h-[472px] lg:w-[314px] lg:h-[372px] xl:w-[564px] xl:h-[472px] "
                 ></div>
               </div>
             );
@@ -273,7 +273,7 @@ const RecentProjects = () => {
       <div className="flex flex-col items-center gap-6">
         <div className="font-semibold text-3xl ">Start a Project?</div>
         <div>
-          <Button text="Contact Us" />
+          <Button text="Contact Us" onclick={()=>navigate('/contact')}/>
         </div>
       </div>
     </div>

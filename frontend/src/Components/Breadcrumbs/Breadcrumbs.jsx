@@ -8,10 +8,10 @@ const Breadcrumbs = () => {
     const pathname=location.pathname.split('/').filter(x => x)
   return (
     <div>
-        <nav className='text-black mt-12 '>
-            <ul className='flex '>
+        <nav className='text-black mt-8 sm:mt-12 '>
+            <ul className='flex gap-1 items-center'>
                 <li>
-                    <Link to='/'>HOME</Link>
+                    <Link to='/'className='text-xs lg:text-lg'>HOME</Link>
                 </li>
                 {
                     pathname.map((value,index)=>{
@@ -20,13 +20,13 @@ const Breadcrumbs = () => {
                         const title= convertSlugToTitle( value)
 
                         return(
-                            <li key={to} className='flex'>
+                            <li key={to} className='flex gap-1'>
                                 <span className='flex items-center'><FiArrowRight/></span>
                                 {
                                     last?(
                                         <span>{title}</span>
                                     ):(
-                                        <Link className='text-lg font-normal' to={to}>{title}</Link>
+                                        <Link className='text-xs lg:text-lg font-normal ' to={to}>{title}</Link>
                                     )
                                 }
 

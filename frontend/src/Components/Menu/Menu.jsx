@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 const Menu = () => {
   const Menu = ({ number, text }) => {
     return (
-      <div className="flex flex-col  cursor-pointer">
+      <div className="flex flex-col  cursor-pointer" >
         <div className="text-xs font-medium w-1.5 h-4 ">{number}</div>
         <div className="text-xl active:font-medium font-customfont">{text}</div>
       </div>
@@ -25,7 +25,9 @@ const Menu = () => {
       <HashLink to='#teams'>
       <Menu number={4} text="Team" />
       </HashLink>
+      <HashLink to='#blog'>
       <Menu number={5} text="Blog" />
+      </HashLink>
     </div>
   );
 };

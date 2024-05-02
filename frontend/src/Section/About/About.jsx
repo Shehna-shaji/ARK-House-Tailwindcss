@@ -26,7 +26,7 @@ const About = () => {
     );
   };
   return (
-    <div className="flex flex-col justify-center gap-16 bg-[#ffffff] pt-14 pb-14 " id="about">
+    <div className="flex flex-col justify-center md:gap-16 bg-[#ffffff] pt-14 pb-14 " id="about">
       <div className="flex flex-col gap-[30px] items-center w-full">
         <p className="text-2xl text-center md:text-2xl lg:text-4xl xl:text-5xl">
           {" "}

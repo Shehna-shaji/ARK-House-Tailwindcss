@@ -1,6 +1,7 @@
 const slugToTitleDictionary={
     "ourhistory":"OUR HISTORY",
     "projects":"PROJECTS",
+    "CentralSaintGiles":"CENTRAL SAINT GILES"
 }
 
 export const convertSlugToTitle=(slug)=>{

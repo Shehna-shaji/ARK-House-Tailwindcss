@@ -9,6 +9,7 @@ import Projects from "./Pages/Projects/Projects";
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop";
 import Breadcrumbs from "./Components/Breadcrumbs/Breadcrumbs";
 import Contact from "./Pages/Contact/Contact";
+import CentralSaintGiles from "./Pages/CentralSaintGiles/CentralSaintGiles";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
 
             <Route path="/ourhistory" element={<OurHistory />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/projects/CentralSaintGiles" element={<CentralSaintGiles/>}/>
             <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
